@@ -59,3 +59,6 @@ Since your ML service is ready and you have a prediction service, you can write 
 In order to push the image to Docker Hub, you need to create a Docker Hub account and create a repository. Then you need to create a secret in your GitHub repository settings called `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` with your Docker Hub username and password or token.
 
 For the action to run you will alos need to create a secret called `GITHUB_TOKEN` with a token that has the `repo` scope. You can create a token [here](https://github.com/settings/tokens).
+
+## simulate new data arrival
+Go back to the notebook, execute the last cell and push the update on github.
