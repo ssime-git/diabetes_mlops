@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 # variables
 columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
 dict_res = {0: 'Not-Diabetes', 1: 'Diabetes'}
-model_path = './models/pipeline.pkl'
+model_path = './models/model_pipeline.pkl'
 
 # app instance
 app = FastAPI()

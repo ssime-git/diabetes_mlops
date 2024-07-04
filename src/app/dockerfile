@@ -4,12 +4,13 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install Python dependencies.
-COPY app_requirements.txt .
+# Install Python dependencies. (ATTENTION : this is not derived from the context of the docker compose file)
+COPY ./models ./models
+COPY ./src/app/app_requirements.txt .
 RUN pip install --no-cache-dir -r app_requirements.txt
 
 # Copy the application files into the container.
-COPY app.py .
+COPY ./src/app/app.py .
 
 # Make port 8000 available to the outside world
 EXPOSE 8000
