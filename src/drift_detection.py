@@ -41,7 +41,7 @@ def write_drift_status_to_file(status: str, file_path: str) -> None:
 
 def main():
     reference_path = 'data/processed/reference_from_train_data.csv'
-    new_data_path = 'data/processed/new_test_data.csv'
+    new_data_path = 'data/processed/new_data.csv'
     status_file_path = 'drift_detected.txt'
     
     reference_data, new_data = load_data(reference_path, new_data_path)
