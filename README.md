@@ -1,5 +1,13 @@
 # Simple MLOPS workflow example
 
+## Train the model
+
+To train the model, run the following command:
+```py
+python3 src/train_model.py
+```
+
+
 ## Start the prediction service
 
 1. start the docker container
