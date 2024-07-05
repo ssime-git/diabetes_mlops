@@ -24,8 +24,6 @@ To train the model, run the following command:
 python3 src/train_model.py
 ```
 
-CHALLENGE : To go a bit further you could write the ingestion and preprocessing scripts that will get raw data and prepare it for training.
-
 ## Write the Dockerfile and docker-compose.yml
 
 Now with a trained model, we can write the Dockerfile and docker-compose.yml to create a container that will serve the model.
@@ -60,5 +58,8 @@ In order to push the image to Docker Hub, you need to create a Docker Hub accoun
 
 For the action to run you will alos need to create a secret called `GITHUB_TOKEN` with a token that has the `repo` scope. You can create a token [here](https://github.com/settings/tokens).
 
-## simulate new data arrival
+## Simulate new data arrival
 Go back to the notebook, execute the last cell and push the update on github.
+
+## Challenge
+Now you can go a bit further and write the ingestion and preprocessing scripts that will get raw data and prepare it for training. You can also write a script that will simulate new data arrival and push it to the data source.
