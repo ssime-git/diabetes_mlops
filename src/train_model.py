@@ -41,7 +41,7 @@ def build_pipeline(numeric_features):
 def main():
     # Configuration
     reference_data_path = 'data/processed/reference_from_train_data.csv'
-    new_data_path = 'data/processed/new_test_data.csv'
+    new_data_path = 'data/processed/new_data.csv' # new data get appended to reference_data. Also note that we should update the reference_data in the next step (way to improve)   .
     model_path = 'models/model_pipeline.pkl'
     
     df = load_data(reference_data_path, new_data_path)
